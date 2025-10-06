@@ -1,7 +1,7 @@
 @media screen and (min-width: 1900px) {
     .project-research::before,
     .project-research::after {
-        height: -150px
+        height: 150px
     }
 }
 
@@ -92,8 +92,7 @@
     .project-items {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        margin-left: 0px;
+        margin-left: 0;
         justify-content: space-between;
     }
     .project-research {
