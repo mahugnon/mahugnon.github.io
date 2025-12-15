@@ -9,7 +9,7 @@
 }
 
 .btn-primary {
-    border-radius: 50px;
+    border-radius: var(--border-radius-pill);
     background-color: var(--color-primary);
     color: white;
     text-align: center;
@@ -38,8 +38,7 @@ a {
 }
 
 .fa-5x {
-    color: /*#7b7d8a  #8e8d75*/
-    var(--color-primary);
+    color: var(--color-primary);
     justify-self: center;
     align-self: center;
 }
@@ -143,7 +142,7 @@ a {
     grid-template-rows: repeat(3, 1fr);
 }
 
-row-5 {
+.row-5 {
     grid-template-rows: repeat(5, 1fr);
 }
 
@@ -170,12 +169,12 @@ ul>li {
 
 ul>li>a {
     text-decoration: none;
-    color: #333;
+    color: var(--color-text);
 }
 
 .active {
     border: 1px solid var(--color-primary);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow-default);
     padding: 7px 10px;
     border-radius: 20px;
     color: var(--color-default);
