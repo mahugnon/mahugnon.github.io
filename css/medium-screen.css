@@ -9,6 +9,7 @@
     header {
         display: none;
     }
+    /* Sections avec padding gauche fixe → on réduit et on centre */
     .resume-section {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 50px repeat(5, 1fr);
@@ -52,6 +53,52 @@
     }
     .project-research {
         padding-left: 20px;
+        padding-right: 20px;
+    }
+    .projects-demos {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .projects-section > .grid-1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /* Grilles: passer à 2 colonnes sur tablette */
+    .grid-3,
+    .project-items.grid-3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    /* Recommendations section - tablet */
+    .recommendation-section {
+        padding: 60px 20px;
+    }
+
+    .recommendations-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact section - tablet */
+    .contact-section {
+        padding: 60px 20px;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /* Footer - tablet */
+    .site-footer {
+        padding: 30px 20px;
     }
 }
 
@@ -66,6 +113,8 @@
         display: flex;
         flex-direction: column;
         align-content: flex-start;
+        margin: 0 15px;
+        padding-left: 10px;
     }
     .resume-section h1 {
         order: 1;
@@ -95,9 +144,111 @@
         margin-left: 0;
         justify-content: space-between;
     }
+    /* Grilles: une seule colonne sur mobile */
+    .grid-3,
+    .project-items.grid-3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+    }
     .project-research {
         margin-top: 200px;
         padding-left: 10px;
+        padding-right: 10px;
         overflow: auto;
+    }
+    .projects-demos {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Recommendations section - mobile */
+    .recommendation-section {
+        padding: 50px 15px;
+    }
+
+    .recommendation-section h1 {
+        font-size: 2em;
+    }
+
+    .recommendations-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .recommendation-card {
+        padding: 20px;
+    }
+
+    .recommendation-text {
+        font-size: 0.95em;
+    }
+
+    /* Contact section - mobile */
+    .contact-section {
+        padding: 50px 15px;
+        min-height: auto;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-info h1 {
+        font-size: 2em;
+    }
+
+    .contact-details {
+        align-items: center;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .contact-text {
+        align-items: center;
+    }
+
+    .contact-social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .contact-content {
+        gap: 30px;
+    }
+
+    .contact-card {
+        max-width: 100%;
+    }
+
+    .card-body {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 15px;
+    }
+
+    .stat-number {
+        font-size: 1.4em;
+    }
+
+    .stat-label {
+        font-size: 0.65em;
+    }
+
+    /* Footer - mobile */
+    .site-footer {
+        padding: 20px 15px;
+    }
+
+    .footer-content p {
+        font-size: 0.8em;
     }
 }
