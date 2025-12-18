@@ -104,8 +104,14 @@
         <div class="grid-2 horizontal_menu">
             <div class=" about_resume">
 
-                <a href="#resume"> <strong>Go to my resume</strong></a>
+                <a href="#resume"> <strong>Go to resume</strong></a>
                 <span class="fas fa-arrow-down"></span>
+            </div>
+
+            <div class=" about_resume">
+                <i class="fas fa-download"></i> <a href="#cv-download">
+                     <strong>Download resume</strong>
+                </a>
             </div>
 
         </div>
@@ -255,18 +261,16 @@
                         <span class="event-date">
                            April 2019 - June 2022
                         </span>
-                    <span class="event-name">PhD Software evolution at
-                            <a href="https://rmod.gitlabpages.inria.fr/website/" target="_blank">RMoD</a>/<a
-                                href="https://www.sa-cim.fr/">SA-CIM</a>
+                    <span class="event-name">PhD in Software Evolution at
+                        <a href="https://rmod.gitlabpages.inria.fr/website/" target="_blank">RMoD/INRIA</a> & <a
+                                href="https://insurance.orisha.com/">Orisha (formerly SA-CIM)</a>
                         </span>
 
                     <div class="event-description">
-                        I am a CFRE PhD student as part of <a href="https://rmod.gitlabpages.inria.fr/website/"
-                                                              target="_blank">RMoD</a> team. My PhD. is in collaboration
-                        with <a href="https://www.sa-cim.fr/">SA-CIM</a>. Developping tools and technics
-                        to help
-                        <a href="https://www.sa-cim.fr/">SA-CIM</a> improving it's development practices using software
-                        analysis. improves development practices on its software system written Powerbuilder.
+                        CIFRE industry-sponsored PhD developing tools to modernize PowerBuilder legacy system (2M+ LOC):
+                        built static analysis engine, tickets analytics dashboard, automated linter for code quality,
+                        and delivered SVN training. Company's broader modernization efforts (including my tools)
+                        resulted in 43% productivity increase and 31% rework reduction.
                     </div>
                 </div>
                 <div class="timeline-event">
@@ -285,12 +289,13 @@
                         <span class="event-date">
                            March 2018 - Augest 2018
                         </span>
-                    <span class="event-name">Internship at <a href="https://www.inrae.fr/"
-                                                              target="_blank">INRAE</a> </span>
+                    <span class="event-name">C++ Software Developer Internship at <a href="https://www.inrae.fr/"
+                                                                                     target="_blank">INRAE (UMR MoSAR)</a> </span>
                     <div class="event-description">
-                        Working as part of <a href="http://www2.agroparistech.fr/Mosar-Modelisation-systemique.html"
-                                              target="_blank">UMR MoSAR</a> team on developping a dairy cow metamolism
-                        smulator.
+                        6-month internship developing a dairy cow metabolism simulator in C++. Translated mathematical
+                        models into object-oriented code using ODEs and numerical solvers (Runge-Kutta,
+                        Adams-Bashforth). Optimized simulation performance through numerical methods benchmarking,
+                        achieving 15% execution time reduction while maintaining numerical precision (ε = 10⁻⁴).
                     </div>
                 </div>
                 <div class="timeline-event">
@@ -312,13 +317,12 @@
                         <span class="event-date">
                            September 2016 - September 2018
                         </span>
-                    <span class="event-name"> Master <a
-                            href="http://www.issatso.rnu.tn/fo/description_parcours/MR-SPI.pdf" target="_blank">SPI(Intelligent Pervasif Systems)</a> </span>
+                    <span class="event-name"> Master of Science in<a
+                            href="http://www.issatso.rnu.tn/fo/description_parcours/MR-SPI.pdf" target="_blank">SPI(Intelligent Pervasive Systems)</a> </span>
                     <div class="event-description">
-                        <a href="http://www.uc.rnu.tn/"> University of Sousse</a> , Tunisia. During this master, I
-                        learned software engineering. I also learned how to optimise algorithms through parallel
-                        computing and model real-world problems using
-                        machine learning algorithms.
+                        <a href="http://www.uc.rnu.tn/"> University of Sousse</a>, Tunisia. Specialized in software engineering, machine learning, and high-performance computing. Developed
+                        expertise in algorithm optimization through parallel computing, distributed systems
+                        architecture, and applying ML algorithms to real-world problem modeling.
                     </div>
                 </div>
 
@@ -649,7 +653,7 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <div class="cv-download-group">
+                    <div class="cv-download-group" id="cv-download">
                         <span class="download-label"><i class="fas fa-download"></i> Download CV</span>
                         <div class="download-buttons">
                             <a href="./resources/cv-fr.pdf" download class="btn btn-cv">
